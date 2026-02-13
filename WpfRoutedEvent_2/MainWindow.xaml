@@ -1,0 +1,46 @@
+﻿<Window x:Class="WpfRoutedEvent_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:local="clr-namespace:WpfRoutedEvent_2"
+        Title="Маршрутизированные события - Калькулятор" 
+        Height="300" 
+        Width="500">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Левая часть - TextBox -->
+        <StackPanel Grid.Column="0" 
+                    Margin="20">
+            <TextBlock Text="Input number" 
+                       Margin="0,0,0,10"/>
+            <TextBox x:Name="txtBox" 
+                     Height="30"
+                     FontSize="14"/>
+        </StackPanel>
+
+        <!-- Правая часть - кнопки -->
+        <StackPanel x:Name="stackPanel" 
+                    Grid.Column="1" 
+                    HorizontalAlignment="Left"
+                    Margin="20"
+                    VerticalAlignment="Top" 
+                    Width="100"
+                    ButtonBase.Click="StackPanel_Click_1">
+
+            <Button x:Name="butAdd" 
+                    Content="x + x" 
+                    Height="40"
+                    Margin="0,0,0,10"/>
+
+            <Button x:Name="butMult" 
+                    Content="x * x" 
+                    Height="40"/>
+        </StackPanel>
+    </Grid>
+</Window>
