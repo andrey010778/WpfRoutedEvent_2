@@ -14,7 +14,7 @@
             <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
 
-        <!-- Левая часть - TextBox -->
+        
         <StackPanel Grid.Column="0" 
                     Margin="20">
             <TextBlock Text="Input number" 
@@ -24,7 +24,7 @@
                      FontSize="14"/>
         </StackPanel>
 
-        <!-- Правая часть - кнопки -->
+        
         <StackPanel x:Name="stackPanel" 
                     Grid.Column="1" 
                     HorizontalAlignment="Left"
